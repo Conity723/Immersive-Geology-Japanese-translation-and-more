@@ -54,6 +54,8 @@ public class IGEvaporateFeature extends Feature<IGEvaporateConfig>
 	@Override
 	public boolean place(FeaturePlaceContext<IGEvaporateConfig> context) {
 		WorldGenLevel world = context.level();
+		if(!context.config().canSpawnInDimension(world.getLevel().dimension().location())) return false;
+
 		BlockPos origin = context.origin();
 		RandomSource random = context.random();
 		BlockState evaporiteBlock = context.config().entry().getDefaultBlockstate();

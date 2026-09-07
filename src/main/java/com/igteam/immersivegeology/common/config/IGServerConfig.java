@@ -234,6 +234,7 @@ public class IGServerConfig
 			public final ForgeConfigSpec.IntValue rarity;
 			public final ForgeConfigSpec.BooleanValue useSparsePlacement;
 			public final ForgeConfigSpec.BooleanValue disabled;
+			public final ForgeConfigSpec.ConfigValue<List<? extends String>> dimension_whitelist;
 
 			private EvaporateConfig(ForgeConfigSpec.Builder builder, IWorldGenConfig mineral)
 			{
@@ -247,6 +248,10 @@ public class IGServerConfig
 				this.generationChance = builder.comment("The chance that this mineral is generated in a chunk, 2_000_000 is guaranteed spawn 0 prevents spawns").defineInRange("generation_chance",mineral.rarity(), 0, 2_000_000);
 				this.rarity = builder.comment("Controls ore quality distribution. Lower values favor richer ores, while higher values increase the likelihood of poorer ores. 50 is balanced.").defineInRange("rarity",mineral.rarity(), 0, 100);
 				this.useSparsePlacement = builder.comment("If enabled, mineral vein will only have a chance to spawn once every [16] chunks on average, inplace of every chunk.").define("useSparsePlacement", mineral.useSparsePlacement());
+				this.dimension_whitelist = builder.comment("A List of dimensions that this evaporate can generate in.").defineListAllowEmpty("dimension_whitelist",
+						mineral.getDefaultDimensions(),
+						obj -> obj instanceof String && ResourceLocation.isValidResourceLocation((String) obj)
+				);
 				builder.pop();
 			}
 		}

@@ -16,6 +16,7 @@ import com.mojang.datafixers.util.Either;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.RandomSupport;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 
@@ -73,6 +74,18 @@ public record IGEvaporateConfig(IWorldGenConfig entry, long seed, double temp_ra
 	{
 		IGServerConfig.Evaporates.EvaporateConfig config = IGServerConfig.EVAPORITES.evaporates.get(this.entry);
 		return config.density.get();
+	}
+
+	/**
+	 * Whether the whitelist for this evaporate names the dimension it is being asked to generate in. Unlike an ore
+	 * there is no TFC override to fall back on: an evaporate sits on sand at the surface, which is the same block
+	 * whatever built the terrain.
+	 */
+	public boolean canSpawnInDimension(ResourceLocation dimension)
+	{
+		return getConfig().dimension_whitelist.get().stream()
+				.map(ResourceLocation::new)
+				.anyMatch(dimension::equals);
 	}
 
 	public boolean canSpawn()
