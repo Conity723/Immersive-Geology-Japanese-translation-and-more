@@ -1,149 +1,41 @@
 {
   "values": [
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_copper_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_copper_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_copper_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_copper_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_copper_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_copper_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_copper_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_copper_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_copper_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_copper_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_copper_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_copper_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_copper_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_copper_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_copper_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gold_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gold_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gold_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gold_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gold_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gold_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gold_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gold_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gold_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gold_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gold_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gold_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gold_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gold_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gold_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gold_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gold_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gold_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gold_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gold_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gold_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_copper_stone",
+    "immersivegeology:minecraft_normal_ore_block_copper_stone",
+    "immersivegeology:minecraft_rich_ore_block_copper_stone",
+    "immersivegeology:minecraft_poor_ore_block_copper_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_copper_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_copper_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_copper_andesite",
+    "immersivegeology:minecraft_normal_ore_block_copper_andesite",
+    "immersivegeology:minecraft_rich_ore_block_copper_andesite",
+    "immersivegeology:minecraft_poor_ore_block_copper_diorite",
+    "immersivegeology:minecraft_normal_ore_block_copper_diorite",
+    "immersivegeology:minecraft_rich_ore_block_copper_diorite",
+    "immersivegeology:minecraft_poor_ore_block_copper_granite",
+    "immersivegeology:minecraft_normal_ore_block_copper_granite",
+    "immersivegeology:minecraft_rich_ore_block_copper_granite",
+    "immersivegeology:minecraft_poor_ore_block_gold_stone",
+    "immersivegeology:minecraft_normal_ore_block_gold_stone",
+    "immersivegeology:minecraft_rich_ore_block_gold_stone",
+    "immersivegeology:minecraft_poor_ore_block_gold_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_gold_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_gold_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_gold_andesite",
+    "immersivegeology:minecraft_normal_ore_block_gold_andesite",
+    "immersivegeology:minecraft_rich_ore_block_gold_andesite",
+    "immersivegeology:minecraft_poor_ore_block_gold_diorite",
+    "immersivegeology:minecraft_normal_ore_block_gold_diorite",
+    "immersivegeology:minecraft_rich_ore_block_gold_diorite",
+    "immersivegeology:minecraft_poor_ore_block_gold_granite",
+    "immersivegeology:minecraft_normal_ore_block_gold_granite",
+    "immersivegeology:minecraft_rich_ore_block_gold_granite",
+    "immersivegeology:minecraft_poor_ore_block_gold_basalt",
+    "immersivegeology:minecraft_normal_ore_block_gold_basalt",
+    "immersivegeology:minecraft_rich_ore_block_gold_basalt",
+    "immersivegeology:minecraft_poor_ore_block_gold_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_gold_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_gold_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_lead_andesite",
       "required": false
@@ -312,66 +204,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_lead_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lead_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lead_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lead_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lead_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lead_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lead_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lead_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lead_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lead_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lead_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lead_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lead_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lead_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lead_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lead_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_lead_stone",
+    "immersivegeology:minecraft_normal_ore_block_lead_stone",
+    "immersivegeology:minecraft_rich_ore_block_lead_stone",
+    "immersivegeology:minecraft_poor_ore_block_lead_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_lead_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_lead_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_lead_andesite",
+    "immersivegeology:minecraft_normal_ore_block_lead_andesite",
+    "immersivegeology:minecraft_rich_ore_block_lead_andesite",
+    "immersivegeology:minecraft_poor_ore_block_lead_diorite",
+    "immersivegeology:minecraft_normal_ore_block_lead_diorite",
+    "immersivegeology:minecraft_rich_ore_block_lead_diorite",
+    "immersivegeology:minecraft_poor_ore_block_lead_granite",
+    "immersivegeology:minecraft_normal_ore_block_lead_granite",
+    "immersivegeology:minecraft_rich_ore_block_lead_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_platinum_andesite",
       "required": false
@@ -540,126 +387,36 @@
       "id": "immersivegeology:tfc_rich_ore_block_platinum_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_platinum_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_platinum_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_platinum_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_platinum_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_platinum_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_platinum_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_platinum_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_platinum_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_platinum_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_platinum_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_platinum_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_platinum_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_platinum_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_platinum_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_platinum_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_silver_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_silver_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_silver_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_silver_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_silver_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_silver_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_silver_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_silver_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_silver_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_silver_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_silver_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_silver_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_silver_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_silver_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_silver_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_platinum_stone",
+    "immersivegeology:minecraft_normal_ore_block_platinum_stone",
+    "immersivegeology:minecraft_rich_ore_block_platinum_stone",
+    "immersivegeology:minecraft_poor_ore_block_platinum_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_platinum_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_platinum_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_platinum_andesite",
+    "immersivegeology:minecraft_normal_ore_block_platinum_andesite",
+    "immersivegeology:minecraft_rich_ore_block_platinum_andesite",
+    "immersivegeology:minecraft_poor_ore_block_platinum_diorite",
+    "immersivegeology:minecraft_normal_ore_block_platinum_diorite",
+    "immersivegeology:minecraft_rich_ore_block_platinum_diorite",
+    "immersivegeology:minecraft_poor_ore_block_platinum_granite",
+    "immersivegeology:minecraft_normal_ore_block_platinum_granite",
+    "immersivegeology:minecraft_rich_ore_block_platinum_granite",
+    "immersivegeology:minecraft_poor_ore_block_silver_stone",
+    "immersivegeology:minecraft_normal_ore_block_silver_stone",
+    "immersivegeology:minecraft_rich_ore_block_silver_stone",
+    "immersivegeology:minecraft_poor_ore_block_silver_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_silver_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_silver_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_silver_andesite",
+    "immersivegeology:minecraft_normal_ore_block_silver_andesite",
+    "immersivegeology:minecraft_rich_ore_block_silver_andesite",
+    "immersivegeology:minecraft_poor_ore_block_silver_diorite",
+    "immersivegeology:minecraft_normal_ore_block_silver_diorite",
+    "immersivegeology:minecraft_rich_ore_block_silver_diorite",
+    "immersivegeology:minecraft_poor_ore_block_silver_granite",
+    "immersivegeology:minecraft_normal_ore_block_silver_granite",
+    "immersivegeology:minecraft_rich_ore_block_silver_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_acanthite_diorite",
       "required": false
@@ -768,30 +525,12 @@
       "id": "immersivegeology:tfc_rich_ore_block_acanthite_slate",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_acanthite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_acanthite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_acanthite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_acanthite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_acanthite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_acanthite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_acanthite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_acanthite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_acanthite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_acanthite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_acanthite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_acanthite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_apatite_diorite",
       "required": false
@@ -900,78 +639,24 @@
       "id": "immersivegeology:tfc_rich_ore_block_apatite_slate",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_apatite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_apatite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_apatite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_apatite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_apatite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_apatite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_apatite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_apatite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_apatite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_apatite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_apatite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_apatite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_apatite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_apatite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_apatite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_alumina_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_alumina_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_alumina_end_stone",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_apatite_stone",
+    "immersivegeology:minecraft_normal_ore_block_apatite_stone",
+    "immersivegeology:minecraft_rich_ore_block_apatite_stone",
+    "immersivegeology:minecraft_poor_ore_block_apatite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_apatite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_apatite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_apatite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_apatite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_apatite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_apatite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_apatite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_apatite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_apatite_granite",
+    "immersivegeology:minecraft_normal_ore_block_apatite_granite",
+    "immersivegeology:minecraft_rich_ore_block_apatite_granite",
+    "immersivegeology:minecraft_poor_ore_block_alumina_end_stone",
+    "immersivegeology:minecraft_normal_ore_block_alumina_end_stone",
+    "immersivegeology:minecraft_rich_ore_block_alumina_end_stone",
     {
       "id": "immersivegeology:tfc_poor_ore_block_anatase_andesite",
       "required": false
@@ -1128,18 +813,9 @@
       "id": "immersivegeology:tfc_rich_ore_block_anatase_slate",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_anatase_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_anatase_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_anatase_end_stone",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_anatase_end_stone",
+    "immersivegeology:minecraft_normal_ore_block_anatase_end_stone",
+    "immersivegeology:minecraft_rich_ore_block_anatase_end_stone",
     {
       "id": "immersivegeology:tfc_poor_ore_block_bauxite_chalk",
       "required": false
@@ -1224,246 +900,66 @@
       "id": "immersivegeology:tfc_rich_ore_block_bauxite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bauxite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bauxite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bauxite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bauxite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bauxite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bauxite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bauxite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bauxite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bauxite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bauxite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bauxite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bauxite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bauxite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bauxite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bauxite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bituminous_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bituminous_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bituminous_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bituminous_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bituminous_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bituminous_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bituminous_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bituminous_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bituminous_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bituminous_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bituminous_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bituminous_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_bituminous_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_bituminous_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_bituminous_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_anthracite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_anthracite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_anthracite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_anthracite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_anthracite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_anthracite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_anthracite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_anthracite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_anthracite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_anthracite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_anthracite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_anthracite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_anthracite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_anthracite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_anthracite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cassiterite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cassiterite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cassiterite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cassiterite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cassiterite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cassiterite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cassiterite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cassiterite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cassiterite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cassiterite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cassiterite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cassiterite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cassiterite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cassiterite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cassiterite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_bauxite_stone",
+    "immersivegeology:minecraft_normal_ore_block_bauxite_stone",
+    "immersivegeology:minecraft_rich_ore_block_bauxite_stone",
+    "immersivegeology:minecraft_poor_ore_block_bauxite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_bauxite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_bauxite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_bauxite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_bauxite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_bauxite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_bauxite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_bauxite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_bauxite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_bauxite_granite",
+    "immersivegeology:minecraft_normal_ore_block_bauxite_granite",
+    "immersivegeology:minecraft_rich_ore_block_bauxite_granite",
+    "immersivegeology:minecraft_poor_ore_block_bituminous_stone",
+    "immersivegeology:minecraft_normal_ore_block_bituminous_stone",
+    "immersivegeology:minecraft_rich_ore_block_bituminous_stone",
+    "immersivegeology:minecraft_poor_ore_block_bituminous_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_bituminous_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_bituminous_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_bituminous_andesite",
+    "immersivegeology:minecraft_normal_ore_block_bituminous_andesite",
+    "immersivegeology:minecraft_rich_ore_block_bituminous_andesite",
+    "immersivegeology:minecraft_poor_ore_block_bituminous_diorite",
+    "immersivegeology:minecraft_normal_ore_block_bituminous_diorite",
+    "immersivegeology:minecraft_rich_ore_block_bituminous_diorite",
+    "immersivegeology:minecraft_poor_ore_block_bituminous_granite",
+    "immersivegeology:minecraft_normal_ore_block_bituminous_granite",
+    "immersivegeology:minecraft_rich_ore_block_bituminous_granite",
+    "immersivegeology:minecraft_poor_ore_block_anthracite_stone",
+    "immersivegeology:minecraft_normal_ore_block_anthracite_stone",
+    "immersivegeology:minecraft_rich_ore_block_anthracite_stone",
+    "immersivegeology:minecraft_poor_ore_block_anthracite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_anthracite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_anthracite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_anthracite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_anthracite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_anthracite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_anthracite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_anthracite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_anthracite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_anthracite_granite",
+    "immersivegeology:minecraft_normal_ore_block_anthracite_granite",
+    "immersivegeology:minecraft_rich_ore_block_anthracite_granite",
+    "immersivegeology:minecraft_poor_ore_block_cassiterite_stone",
+    "immersivegeology:minecraft_normal_ore_block_cassiterite_stone",
+    "immersivegeology:minecraft_rich_ore_block_cassiterite_stone",
+    "immersivegeology:minecraft_poor_ore_block_cassiterite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_cassiterite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_cassiterite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_cassiterite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_cassiterite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_cassiterite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_cassiterite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_cassiterite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_cassiterite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_cassiterite_granite",
+    "immersivegeology:minecraft_normal_ore_block_cassiterite_granite",
+    "immersivegeology:minecraft_rich_ore_block_cassiterite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_chalcocite_andesite",
       "required": false
@@ -1512,30 +1008,12 @@
       "id": "immersivegeology:tfc_rich_ore_block_chalcocite_rhyolite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chalcocite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chalcocite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chalcocite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chalcocite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chalcocite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chalcocite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_chalcocite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_chalcocite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_chalcocite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_chalcocite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_chalcocite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_chalcocite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_chalcopyrite_diorite",
       "required": false
@@ -1656,30 +1134,12 @@
       "id": "immersivegeology:tfc_rich_ore_block_chalcopyrite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chalcopyrite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chalcopyrite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chalcopyrite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chalcopyrite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chalcopyrite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chalcopyrite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_chalcopyrite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_chalcopyrite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_chalcopyrite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_chalcopyrite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_chalcopyrite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_chalcopyrite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_chromite_diorite",
       "required": false
@@ -1788,66 +1248,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_chromite_slate",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chromite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chromite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chromite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chromite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chromite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chromite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chromite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chromite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chromite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chromite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chromite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chromite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_chromite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_chromite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_chromite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_chromite_stone",
+    "immersivegeology:minecraft_normal_ore_block_chromite_stone",
+    "immersivegeology:minecraft_rich_ore_block_chromite_stone",
+    "immersivegeology:minecraft_poor_ore_block_chromite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_chromite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_chromite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_chromite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_chromite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_chromite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_chromite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_chromite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_chromite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_chromite_granite",
+    "immersivegeology:minecraft_normal_ore_block_chromite_granite",
+    "immersivegeology:minecraft_rich_ore_block_chromite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_cobaltite_diorite",
       "required": false
@@ -1956,42 +1371,15 @@
       "id": "immersivegeology:tfc_rich_ore_block_cobaltite_slate",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cobaltite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cobaltite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cobaltite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cobaltite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cobaltite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cobaltite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cryolite_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cryolite_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cryolite_end_stone",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_cobaltite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_cobaltite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_cobaltite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_cobaltite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_cobaltite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_cobaltite_netherrack",
+    "immersivegeology:minecraft_poor_ore_block_cryolite_end_stone",
+    "immersivegeology:minecraft_normal_ore_block_cryolite_end_stone",
+    "immersivegeology:minecraft_rich_ore_block_cryolite_end_stone",
     {
       "id": "immersivegeology:tfc_poor_ore_block_cuprite_andesite",
       "required": false
@@ -2124,66 +1512,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_cuprite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_cuprite_stone",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_stone",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_stone",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_granite",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_granite",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_fluorite_andesite",
       "required": false
@@ -2268,66 +1611,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_fluorite_granite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_fluorite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_fluorite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_fluorite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_fluorite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_fluorite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_fluorite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_fluorite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_fluorite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_fluorite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_fluorite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_fluorite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_fluorite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_fluorite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_fluorite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_fluorite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_fluorite_stone",
+    "immersivegeology:minecraft_normal_ore_block_fluorite_stone",
+    "immersivegeology:minecraft_rich_ore_block_fluorite_stone",
+    "immersivegeology:minecraft_poor_ore_block_fluorite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_fluorite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_fluorite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_fluorite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_fluorite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_fluorite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_fluorite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_fluorite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_fluorite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_fluorite_granite",
+    "immersivegeology:minecraft_normal_ore_block_fluorite_granite",
+    "immersivegeology:minecraft_rich_ore_block_fluorite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_galena_gneiss",
       "required": false
@@ -2400,210 +1698,57 @@
       "id": "immersivegeology:tfc_rich_ore_block_galena_slate",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_galena_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_galena_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_galena_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_galena_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_galena_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_galena_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_galena_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_galena_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_galena_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_galena_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_galena_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_galena_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_galena_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_galena_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_galena_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_galena_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_galena_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_galena_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_galena_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_galena_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_galena_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gypsum_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gypsum_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gypsum_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gypsum_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gypsum_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gypsum_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gypsum_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gypsum_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gypsum_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gypsum_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gypsum_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gypsum_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_gypsum_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_gypsum_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_gypsum_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_hematite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_hematite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_hematite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_hematite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_hematite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_hematite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_hematite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_hematite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_hematite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_hematite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_hematite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_hematite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_hematite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_hematite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_hematite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_galena_stone",
+    "immersivegeology:minecraft_normal_ore_block_galena_stone",
+    "immersivegeology:minecraft_rich_ore_block_galena_stone",
+    "immersivegeology:minecraft_poor_ore_block_galena_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_galena_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_galena_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_galena_andesite",
+    "immersivegeology:minecraft_normal_ore_block_galena_andesite",
+    "immersivegeology:minecraft_rich_ore_block_galena_andesite",
+    "immersivegeology:minecraft_poor_ore_block_galena_diorite",
+    "immersivegeology:minecraft_normal_ore_block_galena_diorite",
+    "immersivegeology:minecraft_rich_ore_block_galena_diorite",
+    "immersivegeology:minecraft_poor_ore_block_galena_granite",
+    "immersivegeology:minecraft_normal_ore_block_galena_granite",
+    "immersivegeology:minecraft_rich_ore_block_galena_granite",
+    "immersivegeology:minecraft_poor_ore_block_galena_basalt",
+    "immersivegeology:minecraft_normal_ore_block_galena_basalt",
+    "immersivegeology:minecraft_rich_ore_block_galena_basalt",
+    "immersivegeology:minecraft_poor_ore_block_galena_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_galena_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_galena_netherrack",
+    "immersivegeology:minecraft_poor_ore_block_gypsum_stone",
+    "immersivegeology:minecraft_normal_ore_block_gypsum_stone",
+    "immersivegeology:minecraft_rich_ore_block_gypsum_stone",
+    "immersivegeology:minecraft_poor_ore_block_gypsum_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_gypsum_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_gypsum_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_gypsum_andesite",
+    "immersivegeology:minecraft_normal_ore_block_gypsum_andesite",
+    "immersivegeology:minecraft_rich_ore_block_gypsum_andesite",
+    "immersivegeology:minecraft_poor_ore_block_gypsum_diorite",
+    "immersivegeology:minecraft_normal_ore_block_gypsum_diorite",
+    "immersivegeology:minecraft_rich_ore_block_gypsum_diorite",
+    "immersivegeology:minecraft_poor_ore_block_gypsum_granite",
+    "immersivegeology:minecraft_normal_ore_block_gypsum_granite",
+    "immersivegeology:minecraft_rich_ore_block_gypsum_granite",
+    "immersivegeology:minecraft_poor_ore_block_hematite_stone",
+    "immersivegeology:minecraft_normal_ore_block_hematite_stone",
+    "immersivegeology:minecraft_rich_ore_block_hematite_stone",
+    "immersivegeology:minecraft_poor_ore_block_hematite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_hematite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_hematite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_hematite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_hematite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_hematite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_hematite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_hematite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_hematite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_hematite_granite",
+    "immersivegeology:minecraft_normal_ore_block_hematite_granite",
+    "immersivegeology:minecraft_rich_ore_block_hematite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_ilmenite_andesite",
       "required": false
@@ -2688,186 +1833,51 @@
       "id": "immersivegeology:tfc_rich_ore_block_ilmenite_granite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_ilmenite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_ilmenite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_ilmenite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_ilmenite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_ilmenite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_ilmenite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_ilmenite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_ilmenite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_ilmenite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_ilmenite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_ilmenite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_ilmenite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_ilmenite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_ilmenite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_ilmenite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lignite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lignite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lignite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lignite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lignite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lignite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lignite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lignite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lignite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lignite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lignite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lignite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_lignite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_lignite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_lignite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_magnetite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_magnetite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_magnetite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_magnetite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_magnetite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_magnetite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_magnetite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_magnetite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_magnetite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_magnetite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_magnetite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_magnetite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_magnetite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_magnetite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_magnetite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_ilmenite_stone",
+    "immersivegeology:minecraft_normal_ore_block_ilmenite_stone",
+    "immersivegeology:minecraft_rich_ore_block_ilmenite_stone",
+    "immersivegeology:minecraft_poor_ore_block_ilmenite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_ilmenite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_ilmenite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_ilmenite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_ilmenite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_ilmenite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_ilmenite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_ilmenite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_ilmenite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_ilmenite_granite",
+    "immersivegeology:minecraft_normal_ore_block_ilmenite_granite",
+    "immersivegeology:minecraft_rich_ore_block_ilmenite_granite",
+    "immersivegeology:minecraft_poor_ore_block_lignite_stone",
+    "immersivegeology:minecraft_normal_ore_block_lignite_stone",
+    "immersivegeology:minecraft_rich_ore_block_lignite_stone",
+    "immersivegeology:minecraft_poor_ore_block_lignite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_lignite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_lignite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_lignite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_lignite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_lignite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_lignite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_lignite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_lignite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_lignite_granite",
+    "immersivegeology:minecraft_normal_ore_block_lignite_granite",
+    "immersivegeology:minecraft_rich_ore_block_lignite_granite",
+    "immersivegeology:minecraft_poor_ore_block_magnetite_stone",
+    "immersivegeology:minecraft_normal_ore_block_magnetite_stone",
+    "immersivegeology:minecraft_rich_ore_block_magnetite_stone",
+    "immersivegeology:minecraft_poor_ore_block_magnetite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_magnetite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_magnetite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_magnetite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_magnetite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_magnetite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_magnetite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_magnetite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_magnetite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_magnetite_granite",
+    "immersivegeology:minecraft_normal_ore_block_magnetite_granite",
+    "immersivegeology:minecraft_rich_ore_block_magnetite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_molybdenite_diorite",
       "required": false
@@ -3060,30 +2070,12 @@
       "id": "immersivegeology:tfc_rich_ore_block_molybdenite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_molybdenite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_molybdenite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_molybdenite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_molybdenite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_molybdenite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_molybdenite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_molybdenite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_molybdenite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_molybdenite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_molybdenite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_molybdenite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_molybdenite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_monazite_andesite",
       "required": false
@@ -3216,66 +2208,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_monazite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_monazite_stone",
+    "immersivegeology:minecraft_normal_ore_block_monazite_stone",
+    "immersivegeology:minecraft_rich_ore_block_monazite_stone",
+    "immersivegeology:minecraft_poor_ore_block_monazite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_monazite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_monazite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_monazite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_monazite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_monazite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_monazite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_monazite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_monazite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_monazite_granite",
+    "immersivegeology:minecraft_normal_ore_block_monazite_granite",
+    "immersivegeology:minecraft_rich_ore_block_monazite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_pyrite_gneiss",
       "required": false
@@ -3432,30 +2379,12 @@
       "id": "immersivegeology:tfc_rich_ore_block_pyrite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_pyrite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_pyrite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_pyrite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_pyrite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_pyrite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_pyrite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_pyrite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_pyrite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_pyrite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_pyrite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_pyrite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_pyrite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_pyrolusite_diorite",
       "required": false
@@ -3576,66 +2505,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_pyrolusite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_pyrolusite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_pyrolusite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_pyrolusite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_pyrolusite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_pyrolusite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_pyrolusite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_pyrolusite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_pyrolusite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_pyrolusite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_pyrolusite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_pyrolusite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_pyrolusite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_pyrolusite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_pyrolusite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_pyrolusite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_pyrolusite_stone",
+    "immersivegeology:minecraft_normal_ore_block_pyrolusite_stone",
+    "immersivegeology:minecraft_rich_ore_block_pyrolusite_stone",
+    "immersivegeology:minecraft_poor_ore_block_pyrolusite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_pyrolusite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_pyrolusite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_pyrolusite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_pyrolusite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_pyrolusite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_pyrolusite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_pyrolusite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_pyrolusite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_pyrolusite_granite",
+    "immersivegeology:minecraft_normal_ore_block_pyrolusite_granite",
+    "immersivegeology:minecraft_rich_ore_block_pyrolusite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_scheelite_diorite",
       "required": false
@@ -3756,66 +2640,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_scheelite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_scheelite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_scheelite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_scheelite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_scheelite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_scheelite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_scheelite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_scheelite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_scheelite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_scheelite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_scheelite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_scheelite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_scheelite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_scheelite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_scheelite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_scheelite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_scheelite_stone",
+    "immersivegeology:minecraft_normal_ore_block_scheelite_stone",
+    "immersivegeology:minecraft_rich_ore_block_scheelite_stone",
+    "immersivegeology:minecraft_poor_ore_block_scheelite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_scheelite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_scheelite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_scheelite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_scheelite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_scheelite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_scheelite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_scheelite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_scheelite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_scheelite_granite",
+    "immersivegeology:minecraft_normal_ore_block_scheelite_granite",
+    "immersivegeology:minecraft_rich_ore_block_scheelite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_smithsonite_chalk",
       "required": false
@@ -3900,150 +2739,42 @@
       "id": "immersivegeology:tfc_rich_ore_block_smithsonite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_smithsonite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_smithsonite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_smithsonite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_smithsonite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_smithsonite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_smithsonite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_smithsonite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_smithsonite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_smithsonite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_smithsonite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_smithsonite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_smithsonite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_smithsonite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_smithsonite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_smithsonite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_sphalerite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_sphalerite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_sphalerite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_sphalerite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_sphalerite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_sphalerite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_sphalerite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_sphalerite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_sphalerite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_sphalerite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_sphalerite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_sphalerite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_sphalerite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_sphalerite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_sphalerite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_sphalerite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_sphalerite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_sphalerite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_sphalerite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_sphalerite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_sphalerite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_smithsonite_stone",
+    "immersivegeology:minecraft_normal_ore_block_smithsonite_stone",
+    "immersivegeology:minecraft_rich_ore_block_smithsonite_stone",
+    "immersivegeology:minecraft_poor_ore_block_smithsonite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_smithsonite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_smithsonite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_smithsonite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_smithsonite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_smithsonite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_smithsonite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_smithsonite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_smithsonite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_smithsonite_granite",
+    "immersivegeology:minecraft_normal_ore_block_smithsonite_granite",
+    "immersivegeology:minecraft_rich_ore_block_smithsonite_granite",
+    "immersivegeology:minecraft_poor_ore_block_sphalerite_stone",
+    "immersivegeology:minecraft_normal_ore_block_sphalerite_stone",
+    "immersivegeology:minecraft_rich_ore_block_sphalerite_stone",
+    "immersivegeology:minecraft_poor_ore_block_sphalerite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_sphalerite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_sphalerite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_sphalerite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_sphalerite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_sphalerite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_sphalerite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_sphalerite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_sphalerite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_sphalerite_granite",
+    "immersivegeology:minecraft_normal_ore_block_sphalerite_granite",
+    "immersivegeology:minecraft_rich_ore_block_sphalerite_granite",
+    "immersivegeology:minecraft_poor_ore_block_sphalerite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_sphalerite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_sphalerite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_sphalerite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_sphalerite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_sphalerite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_thorianite_diorite",
       "required": false
@@ -4164,18 +2895,9 @@
       "id": "immersivegeology:tfc_rich_ore_block_thorianite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_thorianite_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_thorianite_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_thorianite_end_stone",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_thorianite_end_stone",
+    "immersivegeology:minecraft_normal_ore_block_thorianite_end_stone",
+    "immersivegeology:minecraft_rich_ore_block_thorianite_end_stone",
     {
       "id": "immersivegeology:tfc_poor_ore_block_thorite_andesite",
       "required": false
@@ -4416,18 +3138,9 @@
       "id": "immersivegeology:tfc_rich_ore_block_thorite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_thorite_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_thorite_end_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_thorite_end_stone",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_thorite_end_stone",
+    "immersivegeology:minecraft_normal_ore_block_thorite_end_stone",
+    "immersivegeology:minecraft_rich_ore_block_thorite_end_stone",
     {
       "id": "immersivegeology:tfc_poor_ore_block_millerite_diorite",
       "required": false
@@ -4464,90 +3177,27 @@
       "id": "immersivegeology:tfc_rich_ore_block_millerite_granite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_millerite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_millerite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_millerite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_millerite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_millerite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_millerite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_millerite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_millerite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_millerite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_millerite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_millerite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_millerite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_millerite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_millerite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_millerite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_millerite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_millerite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_millerite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_millerite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_millerite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_millerite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_millerite_stone",
+    "immersivegeology:minecraft_normal_ore_block_millerite_stone",
+    "immersivegeology:minecraft_rich_ore_block_millerite_stone",
+    "immersivegeology:minecraft_poor_ore_block_millerite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_millerite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_millerite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_millerite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_millerite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_millerite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_millerite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_millerite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_millerite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_millerite_granite",
+    "immersivegeology:minecraft_normal_ore_block_millerite_granite",
+    "immersivegeology:minecraft_rich_ore_block_millerite_granite",
+    "immersivegeology:minecraft_poor_ore_block_millerite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_millerite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_millerite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_millerite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_millerite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_millerite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_unobtania_diorite",
       "required": false
@@ -4656,66 +3306,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_unobtania_slate",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_unobtania_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_unobtania_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_unobtania_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_unobtania_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_unobtania_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_unobtania_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_unobtania_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_unobtania_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_unobtania_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_unobtania_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_unobtania_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_unobtania_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_unobtania_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_unobtania_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_unobtania_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_unobtania_stone",
+    "immersivegeology:minecraft_normal_ore_block_unobtania_stone",
+    "immersivegeology:minecraft_rich_ore_block_unobtania_stone",
+    "immersivegeology:minecraft_poor_ore_block_unobtania_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_unobtania_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_unobtania_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_unobtania_andesite",
+    "immersivegeology:minecraft_normal_ore_block_unobtania_andesite",
+    "immersivegeology:minecraft_rich_ore_block_unobtania_andesite",
+    "immersivegeology:minecraft_poor_ore_block_unobtania_diorite",
+    "immersivegeology:minecraft_normal_ore_block_unobtania_diorite",
+    "immersivegeology:minecraft_rich_ore_block_unobtania_diorite",
+    "immersivegeology:minecraft_poor_ore_block_unobtania_granite",
+    "immersivegeology:minecraft_normal_ore_block_unobtania_granite",
+    "immersivegeology:minecraft_rich_ore_block_unobtania_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_uraninite_diorite",
       "required": false
@@ -4752,66 +3357,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_uraninite_granite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_uraninite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_uraninite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_uraninite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_uraninite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_uraninite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_uraninite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_uraninite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_uraninite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_uraninite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_uraninite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_uraninite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_uraninite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_uraninite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_uraninite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_uraninite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_uraninite_stone",
+    "immersivegeology:minecraft_normal_ore_block_uraninite_stone",
+    "immersivegeology:minecraft_rich_ore_block_uraninite_stone",
+    "immersivegeology:minecraft_poor_ore_block_uraninite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_uraninite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_uraninite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_uraninite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_uraninite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_uraninite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_uraninite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_uraninite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_uraninite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_uraninite_granite",
+    "immersivegeology:minecraft_normal_ore_block_uraninite_granite",
+    "immersivegeology:minecraft_rich_ore_block_uraninite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_vanadinite_diorite",
       "required": false
@@ -4848,90 +3408,27 @@
       "id": "immersivegeology:tfc_rich_ore_block_vanadinite_granite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_vanadinite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_vanadinite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_vanadinite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_vanadinite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_vanadinite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_vanadinite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_vanadinite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_vanadinite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_vanadinite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_vanadinite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_vanadinite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_vanadinite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_vanadinite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_vanadinite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_vanadinite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_vanadinite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_vanadinite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_vanadinite_basalt",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_vanadinite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_vanadinite_netherrack",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_vanadinite_netherrack",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_vanadinite_stone",
+    "immersivegeology:minecraft_normal_ore_block_vanadinite_stone",
+    "immersivegeology:minecraft_rich_ore_block_vanadinite_stone",
+    "immersivegeology:minecraft_poor_ore_block_vanadinite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_vanadinite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_vanadinite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_vanadinite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_vanadinite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_vanadinite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_vanadinite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_vanadinite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_vanadinite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_vanadinite_granite",
+    "immersivegeology:minecraft_normal_ore_block_vanadinite_granite",
+    "immersivegeology:minecraft_rich_ore_block_vanadinite_granite",
+    "immersivegeology:minecraft_poor_ore_block_vanadinite_basalt",
+    "immersivegeology:minecraft_normal_ore_block_vanadinite_basalt",
+    "immersivegeology:minecraft_rich_ore_block_vanadinite_basalt",
+    "immersivegeology:minecraft_poor_ore_block_vanadinite_netherrack",
+    "immersivegeology:minecraft_normal_ore_block_vanadinite_netherrack",
+    "immersivegeology:minecraft_rich_ore_block_vanadinite_netherrack",
     {
       "id": "immersivegeology:tfc_poor_ore_block_wolframite_andesite",
       "required": false
@@ -5016,66 +3513,21 @@
       "id": "immersivegeology:tfc_rich_ore_block_wolframite_granite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_wolframite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_wolframite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_wolframite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_wolframite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_wolframite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_wolframite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_wolframite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_wolframite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_wolframite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_wolframite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_wolframite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_wolframite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_wolframite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_wolframite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_wolframite_granite",
-      "required": false
-    },
+    "immersivegeology:minecraft_poor_ore_block_wolframite_stone",
+    "immersivegeology:minecraft_normal_ore_block_wolframite_stone",
+    "immersivegeology:minecraft_rich_ore_block_wolframite_stone",
+    "immersivegeology:minecraft_poor_ore_block_wolframite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_wolframite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_wolframite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_wolframite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_wolframite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_wolframite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_wolframite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_wolframite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_wolframite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_wolframite_granite",
+    "immersivegeology:minecraft_normal_ore_block_wolframite_granite",
+    "immersivegeology:minecraft_rich_ore_block_wolframite_granite",
     {
       "id": "immersivegeology:tfc_poor_ore_block_zircon_diorite",
       "required": false
@@ -5112,65 +3564,20 @@
       "id": "immersivegeology:tfc_rich_ore_block_zircon_granite",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_zircon_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_zircon_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_zircon_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_zircon_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_zircon_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_zircon_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_zircon_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_zircon_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_zircon_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_zircon_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_zircon_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_zircon_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_zircon_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_zircon_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_zircon_granite",
-      "required": false
-    }
+    "immersivegeology:minecraft_poor_ore_block_zircon_stone",
+    "immersivegeology:minecraft_normal_ore_block_zircon_stone",
+    "immersivegeology:minecraft_rich_ore_block_zircon_stone",
+    "immersivegeology:minecraft_poor_ore_block_zircon_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_zircon_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_zircon_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_zircon_andesite",
+    "immersivegeology:minecraft_normal_ore_block_zircon_andesite",
+    "immersivegeology:minecraft_rich_ore_block_zircon_andesite",
+    "immersivegeology:minecraft_poor_ore_block_zircon_diorite",
+    "immersivegeology:minecraft_normal_ore_block_zircon_diorite",
+    "immersivegeology:minecraft_rich_ore_block_zircon_diorite",
+    "immersivegeology:minecraft_poor_ore_block_zircon_granite",
+    "immersivegeology:minecraft_normal_ore_block_zircon_granite",
+    "immersivegeology:minecraft_rich_ore_block_zircon_granite"
   ]
 }

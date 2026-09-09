@@ -6,6 +6,9 @@ import com.igteam.immersivegeology.core.material.helper.flags.IFlagType;
 import com.igteam.immersivegeology.core.material.helper.flags.MaterialFlags;
 import com.igteam.immersivegeology.core.material.helper.flags.ModFlags;
 import com.igteam.immersivegeology.core.material.helper.material.StoneFormation;
+import net.minecraft.world.level.Level;
+
+import java.util.Set;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
@@ -18,6 +21,7 @@ public class MaterialMCNetherrack extends MaterialStone {
         super();
         this.name = "netherrack"; // Special Case as we need to override the default name assignment method
         this.STONE_FORMATION = StoneFormation.NETHER_STONE;
+        this.DIMENSIONS = Set.of(Level.NETHER.location());
         addFlags(MaterialFlags.EXISTING_IMPLEMENTATION, ModFlags.MINECRAFT);
     }
 

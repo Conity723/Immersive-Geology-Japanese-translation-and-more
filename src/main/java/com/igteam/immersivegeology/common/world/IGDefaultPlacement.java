@@ -8,6 +8,8 @@
 
 package com.igteam.immersivegeology.common.world;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import com.igteam.immersivegeology.common.config.IGServerConfig;
 import com.igteam.immersivegeology.common.config.IGServerConfig.Ores.OreConfig;
 import com.igteam.immersivegeology.common.world.features.IGOreFeature;
@@ -17,8 +19,10 @@ import com.igteam.immersivegeology.common.world.compat.IGTFCWorld;
 import com.igteam.immersivegeology.common.world.features.helper.IGOreGenUtils;
 import com.igteam.immersivegeology.common.world.placements.IGCountPlacement;
 import com.igteam.immersivegeology.core.lib.IGLib;
+import com.igteam.immersivegeology.core.material.GeologyMaterial;
 import com.igteam.immersivegeology.core.material.data.enums.StoneEnum;
 import com.igteam.immersivegeology.core.material.helper.material.MaterialHelper;
+import com.igteam.immersivegeology.core.material.helper.material.StoneFormation;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
@@ -48,7 +52,10 @@ import org.jetbrains.annotations.Nullable;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.EnumSet;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -120,14 +127,12 @@ public class IGDefaultPlacement extends PlacementFilter
 		{
 			boolean possiblePlace = (isEnd ? canPlaceVeinEnd(chunkPos, seed, config) : canPlaceVein(chunkPos, seed, config)) && canSpawnAt(biome);
 			if(!possiblePlace) return false;
-			MaterialHelper material = entry.instance();
-			// Whether the overworld can host this at all is a question about the rock it is made of, and a TFC
-			// overworld is not made of Minecraft stone. isVeinWorthwhile below still has the final say, block by
-			// block, so this only widens which materials get that far.
-			boolean canSpawnOverworld = material.acceptableStoneType(StoneEnum.MCStone)
-					|| (tfcOverworldOverride(level) && IGTFCWorld.canHostInOverworld(entry.instance()));
-			boolean canSpawnNether = material.acceptableStoneType(StoneEnum.MCNetherrack);
-			boolean canSpawnEnd = material.acceptableStoneType(StoneEnum.MCEndStone);
+			GeologyMaterial material = entry.instance();
+
+			boolean canSpawnOverworld = declaredStoneHosts(material, Level.OVERWORLD.location())
+					|| (tfcOverworldOverride(level) && IGTFCWorld.canHostInOverworld(material));
+			boolean canSpawnNether = declaredStoneHosts(material, Level.NETHER.location());
+			boolean canSpawnEnd = declaredStoneHosts(material, Level.END.location());
 			RandomSource random = IGOreGenUtils.getReuseRandom(entry, level.getSeed(), chunkPos);
 			Vein vein = IGOreFeature.createVein(random, config, entry);
 			if((canSpawnOverworld && isOverworld) || (canSpawnNether && isNether) || (canSpawnEnd && isEnd))
@@ -178,6 +183,38 @@ public class IGDefaultPlacement extends PlacementFilter
 	private static boolean tfcOverworldOverride(WorldGenLevel level)
 	{
 		return IGTFCWorld.isOverworld(level.getLevel()) && IGTFCWorld.overridesDimensionWhitelist(level.getLevel());
+	}
+
+	private static volatile Map<ResourceLocation, Set<StoneFormation>> declaredFormations;
+
+	private static Map<ResourceLocation, Set<StoneFormation>> declaredFormations()
+	{
+		Map<ResourceLocation, Set<StoneFormation>> cached = declaredFormations;
+		if(cached==null)
+		{
+			Map<ResourceLocation, Set<StoneFormation>> built = new HashMap<>();
+			for(IStoneType stone : IGStoneTypes.all())
+			{
+				if(!stone.declaresPresence()||!stone.isStoneTypeValid()) continue;
+				for(ResourceLocation dimension : stone.getDimensions())
+				{
+					built.computeIfAbsent(dimension, d -> EnumSet.noneOf(StoneFormation.class))
+							.add(stone.instance().getStoneFormation());
+				}
+			}
+			cached = Map.copyOf(built);
+			declaredFormations = cached;
+		}
+		return cached;
+	}
+
+	private static boolean declaredStoneHosts(GeologyMaterial material, ResourceLocation dimension)
+	{
+		for(StoneFormation formation : declaredFormations().getOrDefault(dimension, Set.of()))
+		{
+			if(material.isValidStoneFormation(formation)) return true;
+		}
+		return false;
 	}
 
 	private Set<ResourceLocation> getWhitelistedDimensions()

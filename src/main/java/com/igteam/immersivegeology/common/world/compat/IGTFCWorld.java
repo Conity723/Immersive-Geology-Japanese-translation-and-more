@@ -8,6 +8,8 @@
 
 package com.igteam.immersivegeology.common.world.compat;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import com.igteam.immersivegeology.common.config.IGServerConfig;
 import com.igteam.immersivegeology.core.material.GeologyMaterial;
 import com.igteam.immersivegeology.core.material.data.enums.StoneEnum;
@@ -16,19 +18,21 @@ import com.igteam.immersivegeology.core.material.helper.material.StoneFormation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 
-import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
  * What Immersive Geology needs to know about a TerraFirmaCraft world.
+ * This may be extracted into some configuration files later on... maybe.
  * <p>
  * TFC replaces the overworld's stone wholesale with its own rock types, which cover the igneous, metamorphic and
  * sedimentary formations rather than {@link StoneFormation#MINECRAFT_STONE}. That changes which materials the
- * overworld can host: several minerals accept those formations but not Minecraft stone, and so are pinned to the
- * Nether by their dimension whitelist even though a TFC overworld is full of rock that would take them.
+ * overworld can host: several minerals accept those formations but not Minecraft stone, but due to technical debt were
+ * pinned to the Nether by their dimension whitelist even though a TFC overworld is full of rock that would take them.
  * <p>
- * Everything here is soft compat - TerraFirmaCraft is never a compile or load time dependency, so the world type
+ * So we need to override the whitelist for specific world generators.
+ * <p>
+ * Everything here is soft compat as TerraFirmaCraft is never a compile or load time dependency, so the world type
  * is identified by the chunk generator's registry name rather than by any TFC class.
  */
 public final class IGTFCWorld
@@ -77,7 +81,7 @@ public final class IGTFCWorld
 		Set<StoneFormation> cached = formations;
 		if(cached==null)
 		{
-			cached = Arrays.stream(StoneEnum.values())
+			cached = IGStoneTypes.all().stream()
 					.filter(stone -> stone.hasFlag(ModFlags.TFC)&&stone.isStoneTypeValid())
 					.map(stone -> stone.instance().getStoneFormation())
 					.collect(Collectors.toUnmodifiableSet());

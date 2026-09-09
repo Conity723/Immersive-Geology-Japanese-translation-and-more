@@ -33,6 +33,7 @@ import com.igteam.immersivegeology.core.material.helper.flags.ItemCategoryFlags;
 import com.igteam.immersivegeology.core.material.helper.flags.ModFlags;
 import com.igteam.immersivegeology.core.material.helper.material.recipe.IGRecipeStage;
 import com.igteam.immersivegeology.core.material.helper.material.recipe.helper.IGStageProvider;
+import com.igteam.immersivegeology.core.registration.IGOreBlockIndex;
 import com.igteam.immersivegeology.core.registration.IGRegistrationHolder;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
@@ -277,16 +278,12 @@ public interface MaterialHelper {
         return Blocks.AIR;
     }
 
-    default IOreBlock getOreBlock(StoneEnum stone, OreRichness richness)
+    default IOreBlock getOreBlock(IStoneType stone, OreRichness richness)
     {
-        try
-        {
-            return (IOreBlock)IGRegistrationHolder.getBlock.apply(BlockCategoryFlags.ORE_BLOCK.getRegistryKey(this, stone, richness));
-        } catch(Exception exception)
-        {
-            //IGLib.IG_LOGGER.warn("No Ore for this combination exists currently: see Mineral[{}] and Stone[{}] and Ore Grade[{}]", getName(), stone.getName(), richness.getSanitizedName());
-            return null;
-        }
+        // Resolved through the index rather than by rebuilding the registry key: world generation calls this once
+        // per candidate block, and the key alone costs about six string allocations. Null still means the
+        // combination was never registered.
+        return IGOreBlockIndex.get(this, stone, richness);
     }
 
     default IOreBlock getOreBlock(MaterialHelper stone, OreRichness richness)
@@ -313,7 +310,7 @@ public interface MaterialHelper {
     }
 
     boolean acceptableStoneType(MaterialStone instance);
-    default boolean acceptableStoneType(StoneEnum stone)
+    default boolean acceptableStoneType(IStoneType stone)
     {
         return acceptableStoneType(stone.instance());
     };

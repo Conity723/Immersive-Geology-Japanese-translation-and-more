@@ -19,9 +19,11 @@ import com.igteam.immersivegeology.core.material.data.types.MaterialStone;
 import com.igteam.immersivegeology.core.material.helper.flags.BlockCategoryFlags;
 import com.igteam.immersivegeology.core.material.helper.flags.IFlagType;
 import com.igteam.immersivegeology.core.material.helper.flags.ModFlags;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import com.igteam.immersivegeology.core.material.helper.material.MaterialInterface;
 import com.mojang.serialization.Codec;
 import net.minecraft.locale.Language;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
@@ -35,9 +37,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-public enum StoneEnum implements MaterialInterface<MaterialStone> {
+public enum StoneEnum implements IStoneType {
     //===== Terra Firma Craft =====\\
     Andesite(new MaterialAndesite()),
     Basalt(new MaterialBasalt()),
@@ -98,10 +103,29 @@ public enum StoneEnum implements MaterialInterface<MaterialStone> {
     StoneEnum(MaterialStone m){
         this.material = m;
     }
+    /**
+     * Resolved stone type per block, so the name matching below runs once for each block the world contains
+     * rather than once for every block world generation samples.
+     * <p>
+     * Blocks are registry singletons and the match depends only on the block's description id, so a result is
+     * good for the lifetime of the game. Empty means the block is not a stone type Immersive Geology knows.
+     */
+    private static final Map<Block, Optional<StoneEnum>> worldStateCache = new ConcurrentHashMap<>();
+
     public static StoneEnum selectWorldState(BlockState stoneState) {
+        Block block = stoneState.getBlock();
+        Optional<StoneEnum> cached = worldStateCache.get(block);
+        if(cached==null)
+        {
+            cached = worldStateCache.computeIfAbsent(block, b -> Optional.ofNullable(resolveWorldState(b)));
+        }
+        return cached.orElse(null);
+    }
+
+    private static StoneEnum resolveWorldState(Block block) {
         try
         {
-            String name = stoneState.getBlock().getDescriptionId().toLowerCase(Locale.ROOT);
+            String name = block.getDescriptionId().toLowerCase(Locale.ROOT);
             String stoneName = capitalizeFirstLetter(name.substring(name.lastIndexOf('.')+1));
 
             // Check for Minecraft stones first
@@ -136,6 +160,11 @@ public enum StoneEnum implements MaterialInterface<MaterialStone> {
         return material;
     }
 
+    @Override
+    public int index() {
+        return ordinal();
+    }
+
     public List<TargetBlockState> getTargets(MineralEnum mineral)
 	{
         return instance().getTargets(mineral);
@@ -168,5 +197,36 @@ public enum StoneEnum implements MaterialInterface<MaterialStone> {
     public boolean isVanilla()
     {
         return getFlags().contains(ModFlags.MINECRAFT);
+    }
+
+    /**
+     * Derived from the mod flags, exactly as the registry key builder used to derive it inline. Last flag wins,
+     * which is the behaviour the existing block ids were generated with.
+     */
+    @Override
+    public String getRegistryPrefix()
+    {
+        String prefix = "";
+        for(ModFlags modflag : ModFlags.values())
+        {
+            if(hasFlag(modflag)) prefix = modflag.name().toLowerCase(Locale.ROOT)+"_";
+        }
+        return prefix;
+    }
+
+    @Override
+    public Set<ResourceLocation> getDimensions()
+    {
+        return instance().getDimensions();
+    }
+
+    /**
+     * Only Minecraft's own stone. TerraFirmaCraft's rock is present in a TFC world and absent from a vanilla one
+     * even when the mod is loaded, so it goes through the world-type check in IGTFCWorld instead.
+     */
+    @Override
+    public boolean declaresPresence()
+    {
+        return isVanilla();
     }
 }

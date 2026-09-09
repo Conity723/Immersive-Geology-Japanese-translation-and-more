@@ -12,6 +12,7 @@ import com.igteam.immersivegeology.common.block.IGGenericBlock;
 import com.igteam.immersivegeology.common.block.helper.IOreBlock;
 import com.igteam.immersivegeology.common.block.helper.MineralWeathering;
 import com.igteam.immersivegeology.common.block.helper.OreRichness;
+import com.igteam.immersivegeology.core.lib.IGLib;
 import com.igteam.immersivegeology.core.material.data.types.MaterialStone;
 import com.igteam.immersivegeology.core.material.helper.flags.BlockCategoryFlags;
 import com.igteam.immersivegeology.core.material.helper.flags.IFlagType;
@@ -68,7 +69,18 @@ public class IGWeatheringOreBlock extends IGGenericBlock implements IOreBlock
         super(flag, baseMaterial);
         this.materialMap.put(MaterialTexture.overlay, oreMaterial);
         this.richness = richness;
+        this.weathers = oreMaterial.canTarnish();
+
+        if(!this.weathers)
+        {
+            // Registration only builds one of these for an ore that can oxidize, So... likely a misconfiguration.
+            // The block would carry six oxidation properties it can never change, so we'd be adding
+            // 729 states for nothing.
+            IGLib.IG_LOGGER.error("Weathering ore block built for {}, which does not tarnish", oreMaterial.getName());
+        }
     }
+
+    private final boolean weathers;
 
     @Override
     public int getColor(int index, BlockState state) {
@@ -91,7 +103,7 @@ public class IGWeatheringOreBlock extends IGGenericBlock implements IOreBlock
     @Override
     public boolean isRandomlyTicking(BlockState state)
     {
-        return materialMap.values().stream().anyMatch(MaterialInterface::canTarnish);
+        return weathers;
     }
 
     public static List<EnumProperty<MineralWeathering>> OXIDATION_PROPERTIES;
@@ -102,34 +114,35 @@ public class IGWeatheringOreBlock extends IGGenericBlock implements IOreBlock
 
     private static final Direction[] DIRECTIONS = Direction.values();
 
+    /** Chance per random tick that one exposed face advances a stage. */
+    private static final float WEATHER_CHANCE = 0.2f;
+
     @Override
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource rnd)
     {
-        if (!level.isClientSide)
-        {
-            // Iterate over directions and corresponding oxidation properties
-            for (int i = 0; i < DIRECTIONS.length; i++) {
-                Direction direction = DIRECTIONS[i];
-                EnumProperty<MineralWeathering> oxidationProperty = OXIDATION_PROPERTIES.get(i);
-                BlockPos adjacentPos = pos.offset(direction.getNormal());
+        if(level.isClientSide) return;
 
-                handleOxidation(state, level, pos, rnd, oxidationProperty, adjacentPos);
-            }
+        // fixed stale state referencing
+        BlockState weathered = state;
+        for(int i = 0; i < DIRECTIONS.length; i++)
+        {
+            BlockPos adjacentPos = pos.offset(DIRECTIONS[i].getNormal());
+            weathered = weatherFace(weathered, level, rnd, OXIDATION_PROPERTIES.get(i), adjacentPos);
         }
+
+        if(weathered!=state) level.setBlock(pos, weathered, 2);
     }
 
-    private void handleOxidation(BlockState state, ServerLevel level, BlockPos pos, RandomSource rnd, EnumProperty<MineralWeathering> oxidationProperty, BlockPos adjacentPos)
+    private BlockState weatherFace(BlockState state, ServerLevel level, RandomSource rnd, EnumProperty<MineralWeathering> oxidationProperty, BlockPos adjacentPos)
     {
-        if (level.getBlockState(adjacentPos).isAir())
-        {
-            MineralWeathering current = state.getValue(oxidationProperty);
-            MineralWeathering next = nextWeatherStage(current);
-            if(current.equals(next)) return;
-            if(rnd.nextFloat() < 0.2)
-            {
-                level.setBlock(pos, state.setValue(oxidationProperty, next), 2);
-            }
-        }
+        if(!level.getBlockState(adjacentPos).isAir()) return state;
+
+        MineralWeathering current = state.getValue(oxidationProperty);
+        MineralWeathering next = nextWeatherStage(current);
+        if(current.equals(next)) return state;
+        if(rnd.nextFloat() >= WEATHER_CHANCE) return state;
+
+        return state.setValue(oxidationProperty, next);
     }
 
     private MineralWeathering nextWeatherStage(MineralWeathering currentStage)

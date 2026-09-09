@@ -3,6 +3,7 @@ package com.igteam.immersivegeology.core.material.helper.flags;
 import com.igteam.immersivegeology.client.IGClientRenderHandler.RenderTypeSkeleton;
 import com.igteam.immersivegeology.client.menu.ItemSubGroup;
 import com.igteam.immersivegeology.common.block.helper.OreRichness;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import com.igteam.immersivegeology.core.material.helper.material.MaterialHelper;
 import com.igteam.immersivegeology.core.material.helper.material.MaterialInterface;
 import net.minecraft.tags.TagKey;
@@ -42,45 +43,42 @@ public interface IFlagType<T extends Enum<T>> {
     }
 
     default String getRegistryKey(MaterialInterface<?> ore, MaterialInterface<?> stone, OreRichness richness) {
-        String prefix = "";
-
-        for(ModFlags modflag : ModFlags.values())
-        {
-            if(stone.hasFlag(modflag))
-            {
-                prefix = modflag.name().toLowerCase(Locale.ROOT) + "_";
-            }
-        }
+        String prefix = stonePrefix(stone);
 
         return prefix + (richness.name().toLowerCase(Locale.ROOT) + "_" + getRegistryKey(ore.instance(), stone.instance()));
     }
 
     default String getRegistryKey(MaterialHelper ore, MaterialInterface<?> stone, OreRichness richness) {
-        String prefix = "";
-
-        for(ModFlags modflag : ModFlags.values())
-        {
-            if(stone.hasFlag(modflag))
-            {
-                prefix = modflag.name().toLowerCase(Locale.ROOT) + "_";
-            }
-        }
+        String prefix = stonePrefix(stone);
 
         return prefix +(richness.name().toLowerCase(Locale.ROOT) + "_" + getRegistryKey(ore, stone.instance()));
     }
 
     default String getRegistryKey(MaterialHelper ore, MaterialHelper stone, OreRichness richness) {
-        String prefix = "";
-
-        for(ModFlags modflag : ModFlags.values())
-        {
-            if(stone.hasFlag(modflag))
-            {
-                prefix = modflag.name().toLowerCase(Locale.ROOT) + "_";
-            }
-        }
+        String prefix = stonePrefix(stone);
 
         return prefix +(richness.name().toLowerCase(Locale.ROOT) + "_" + getRegistryKey(ore, stone));
+    }
+
+    /**
+     * Ore block names are prefixed by where the host rock comes from. A rock type has its own prefix; anything
+     * else falls back to deriving one from its mod flags, which is how these ids were built normally.
+     * <p>
+     * Obviously, not feasible for a pack developer's custom stone types.
+     */
+    private static String stonePrefix(Object stone)
+    {
+        if(stone instanceof IStoneType type) return type.getRegistryPrefix();
+
+        String prefix = "";
+        if(stone instanceof MaterialHelper helper)
+        {
+            for(ModFlags modflag : ModFlags.values())
+            {
+                if(helper.hasFlag(modflag)) prefix = modflag.name().toLowerCase(Locale.ROOT)+"_";
+            }
+        }
+        return prefix;
     }
 
     default String getRegistryKey(MaterialInterface<?> material, BlockCategoryFlags blockCategory){

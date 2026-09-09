@@ -76,11 +76,6 @@ public record IGEvaporateConfig(IWorldGenConfig entry, long seed, double temp_ra
 		return config.density.get();
 	}
 
-	/**
-	 * Whether the whitelist for this evaporate names the dimension it is being asked to generate in. Unlike an ore
-	 * there is no TFC override to fall back on: an evaporate sits on sand at the surface, which is the same block
-	 * whatever built the terrain.
-	 */
 	public boolean canSpawnInDimension(ResourceLocation dimension)
 	{
 		return getConfig().dimension_whitelist.get().stream()

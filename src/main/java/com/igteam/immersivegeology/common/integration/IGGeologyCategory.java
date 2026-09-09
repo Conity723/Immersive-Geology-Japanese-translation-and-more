@@ -8,6 +8,8 @@
 
 package com.igteam.immersivegeology.common.integration;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import blusunrize.immersiveengineering.common.util.compat.jei.JEIHelper;
 import com.igteam.immersivegeology.common.block.helper.IOreBlock;
 import com.igteam.immersivegeology.common.block.helper.OreRichness;
@@ -158,25 +160,28 @@ public class IGGeologyCategory extends IGRecipeCategory<IGGeoRecipe>
 		GeologyMaterial material = recipe.material;
 		Facts facts = facts(material);
 
-		OreRichness[] grades = OreRichness.values();
-		for(int i = 0; i < grades.length; i++)
+		List<List<ItemStack>> gradeStacks = new ArrayList<>();
+		for(OreRichness grade : OreRichness.values())
 		{
-			List<ItemStack> stacks = oresOf(material, grades[i]);
-			if(stacks.isEmpty()) continue;
+			List<ItemStack> stacks = oresOf(material, grade);
+			if(!stacks.isEmpty()) gradeStacks.add(stacks);
+		}
 
-			Component note = Component.translatable(KEY+"grade."+grades[i].getSanitizedName());
-			builder.addSlot(RecipeIngredientRole.OUTPUT, GRADE_SLOT_X+i*GRADE_PITCH, GRADE_SLOT_Y)
-					.addItemStacks(stacks)
-					.setBackground(JEIHelper.slotDrawable, -1, -1)
-					.addTooltipCallback((view, tooltip) -> tooltip.add(note.copy().withStyle(ChatFormatting.GRAY)));
+		int gradeX = rowStart(gradeStacks.size());
+		for(int i = 0; i < gradeStacks.size(); i++)
+		{
+			builder.addSlot(RecipeIngredientRole.OUTPUT, gradeX+i*GRADE_PITCH, GRADE_SLOT_Y)
+					.addItemStacks(gradeStacks.get(i))
+					.setBackground(JEIHelper.slotDrawable, -1, -1);
 		}
 
 		List<Associate> associates = facts.associates();
-		for(int i = 0; i < associates.size()&&i < ASSOCIATE_MAX; i++)
+		int shown = Math.min(associates.size(), ASSOCIATE_MAX);
+		for(int i = 0; i < shown; i++)
 		{
 			Associate associate = associates.get(i);
 			builder.addSlot(RecipeIngredientRole.OUTPUT, GRADE_SLOT_X+i*GRADE_PITCH, ASSOCIATE_SLOT_Y)
-					.addItemStack(associate.icon())
+					.addItemStacks(associate.icons())
 					.setBackground(JEIHelper.slotDrawable, -1, -1)
 					.addTooltipCallback((view, tooltip) -> tooltip.add(
 							Component.translatable(KEY+"associate_share",
@@ -185,13 +190,26 @@ public class IGGeologyCategory extends IGRecipeCategory<IGGeoRecipe>
 		}
 	}
 
+	private static int rowStart(int slots)
+	{
+		if(slots <= 0) return GRADE_SLOT_X;
+		int width = (slots-1)*GRADE_PITCH+18;
+		return (PANEL_LEFT+PANEL_RIGHT)/2-width/2+1;
+	}
+
 	private static List<ItemStack> oresOf(GeologyMaterial material, OreRichness richness)
 	{
 		List<ItemStack> stacks = new ArrayList<>();
 		ItemCategoryFlags flag = richness.toCategory();
 		if(material.hasFlag(flag)) stacks.add(material.getStack(flag, 1));
+		stacks.addAll(hostRocksOf(material, richness));
+		return stacks;
+	}
 
-		for(StoneEnum stone : StoneEnum.values())
+	private static List<ItemStack> hostRocksOf(GeologyMaterial material, OreRichness richness)
+	{
+		List<ItemStack> stacks = new ArrayList<>();
+		for(IStoneType stone : IGStoneTypes.all())
 		{
 			if(!stone.isStoneTypeValid()||!material.acceptableStoneType(stone)) continue;
 			IOreBlock ore = material.getOreBlock(stone, richness);
@@ -208,7 +226,7 @@ public class IGGeologyCategory extends IGRecipeCategory<IGGeoRecipe>
 
 		drawFrame(graphics);
 		drawHeader(graphics, facts, config);
-		drawGradeCaption(graphics);
+		//drawGradeCaption(graphics);
 
 		if(config==null)
 		{
@@ -739,7 +757,7 @@ public class IGGeologyCategory extends IGRecipeCategory<IGGeoRecipe>
 		}
 	}
 
-	private record Associate(ItemStack icon, double share)
+	private record Associate(List<ItemStack> icons, double share)
 	{
 	}
 
@@ -794,7 +812,7 @@ public class IGGeologyCategory extends IGRecipeCategory<IGGeoRecipe>
 	private static List<Component> stoneList(GeologyMaterial material)
 	{
 		Map<ModFlags, Component> bySource = new EnumMap<>(ModFlags.class);
-		for(StoneEnum stone : StoneEnum.values())
+		for(IStoneType stone : IGStoneTypes.all())
 		{
 			if(!stone.isStoneTypeValid()||!material.acceptableStoneType(stone)) continue;
 			bySource.merge(sourceOf(stone), stone.getTranslation().copy(),
@@ -810,7 +828,7 @@ public class IGGeologyCategory extends IGRecipeCategory<IGGeoRecipe>
 		return List.copyOf(lines);
 	}
 
-	private static ModFlags sourceOf(StoneEnum stone)
+	private static ModFlags sourceOf(IStoneType stone)
 	{
 		for(IFlagType<?> flag : stone.getFlags())
 		{
@@ -846,9 +864,10 @@ public class IGGeologyCategory extends IGRecipeCategory<IGGeoRecipe>
 				.sorted(Map.Entry.<MaterialHelper, Double>comparingByValue().reversed())
 				.limit(ASSOCIATE_MAX)
 				.forEach(entry -> {
-					ItemStack icon = entry.getKey() instanceof GeologyMaterial geology?geology.getOreIcon()
-							: ItemStack.EMPTY;
-					if(!icon.isEmpty()) associates.add(new Associate(icon, entry.getValue()));
+					if(!(entry.getKey() instanceof GeologyMaterial geology)) return;
+					List<ItemStack> hosts = hostRocksOf(geology, OreRichness.NORMAL);
+					if(hosts.isEmpty()) return;
+					associates.add(new Associate(hosts, entry.getValue()));
 				});
 		return associates;
 	}

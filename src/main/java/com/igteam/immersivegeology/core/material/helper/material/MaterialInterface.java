@@ -1,5 +1,6 @@
 package com.igteam.immersivegeology.core.material.helper.material;
 
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler.IMultiblock;
 import com.igteam.immersivegeology.client.helper.IGVeinTextureType;
 
@@ -105,7 +106,7 @@ public interface MaterialInterface<T extends GeologyMaterial> {
 
 	default Block getBlock(BlockCategoryFlags flag) {return instance().getBlock(flag);};
 
-    default IOreBlock getOreBlock(StoneEnum stone, OreRichness richness) {
+    default IOreBlock getOreBlock(IStoneType stone, OreRichness richness) {
         return instance().getOreBlock(stone, richness);
     };
 

@@ -8,6 +8,8 @@
 
 package com.igteam.immersivegeology.common.data.generators.manual;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import com.google.common.base.Preconditions;
 import com.google.common.hash.Hashing;
 import com.google.gson.Gson;
@@ -85,7 +87,7 @@ public class IGManualProvider implements DataProvider
 				ManualPageProvider processing_provider = attemptPageCreation(name+"_processing");
 
 				ArrayList<ResourceLocation> intro_display_list = new ArrayList<>();
-				for(StoneEnum stone : StoneEnum.values())
+				for(IStoneType stone : IGStoneTypes.all())
 				{
 					IOreBlock oreDisplay = material.getOreBlock(stone, OreRichness.NORMAL);
 					if(stone.isStoneTypeValid())

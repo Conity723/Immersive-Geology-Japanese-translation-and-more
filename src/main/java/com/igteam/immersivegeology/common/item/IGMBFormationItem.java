@@ -8,6 +8,7 @@
 
 package com.igteam.immersivegeology.common.item;
 
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import blusunrize.immersiveengineering.api.ApiUtils;
 import blusunrize.immersiveengineering.api.multiblocks.BlockMatcher;
 import blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler;
@@ -231,7 +232,7 @@ public class IGMBFormationItem extends IGGenericItem
 	}
 
 	public boolean isValidRepairItem(ItemStack stack, ItemStack repairCandidate) {
-		if(materialMap.get(MaterialTexture.base) instanceof StoneEnum) return repairCandidate.is(Items.COBBLESTONE);
+		if(materialMap.get(MaterialTexture.base) instanceof IStoneType) return repairCandidate.is(Items.COBBLESTONE);
 		return repairCandidate.is(materialMap.get(MaterialTexture.base).getItem(ItemCategoryFlags.INGOT));
 	}
 

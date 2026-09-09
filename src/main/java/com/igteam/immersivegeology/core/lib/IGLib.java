@@ -8,6 +8,7 @@
 
 package com.igteam.immersivegeology.core.lib;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
 import com.igteam.immersivegeology.core.material.data.enums.*;
 import com.igteam.immersivegeology.core.material.helper.material.MaterialInterface;
 import com.mojang.logging.LogUtils;
@@ -99,7 +100,7 @@ public class IGLib {
 
     public static LinkedList<MaterialInterface<?>> getGeologyMaterials(){
         LinkedList<MaterialInterface<?>> list = new LinkedList<>();
-        list.addAll(List.of(StoneEnum.values()));
+        list.addAll(IGStoneTypes.all());
         list.addAll(List.of(MetalEnum.values()));
         list.addAll(List.of(MineralEnum.values()));
         list.addAll(List.of(MiscEnum.values()));

@@ -15,14 +15,15 @@ public class GenerationTubedNoise implements IGenerationPattern
 {
 	public INoise3D getiNoise3D(int featureSize, long seed)
 	{
+
 		// Create a warp noise generator for organic twist (used later).
 		SimplexNoise3D warpSimplex = new SimplexNoise3D(seed - 1);
-		INoise3D warp = (x, y, z) -> warpSimplex
+		INoise3D warpChain = warpSimplex
 				.octaves(2, 0.5f)
 				.sinWarp(1.5f, 0.8f)
 				.flattened(-1, 1)
-				.bias(-0.1f)
-				.noise(x / 24, y / 64, z / 24);
+				.bias(-0.1f);
+		INoise3D warp = (x, y, z) -> warpChain.noise(x / 24, y / 64, z / 24);
 
 		// Parameters for the cellular distribution of tube seeds.
 		final float tubeCellSize  = Math.max(20, 50 - featureSize);
@@ -31,19 +32,21 @@ public class GenerationTubedNoise implements IGenerationPattern
 
 		// Create a separate noise generator to drive the wobble of the tube seeds.
 		SimplexNoise3D wobbleSimplex = new SimplexNoise3D(seed + 1000);
-		INoise3D wobbleNoise = (x, y, z) -> wobbleSimplex
+		INoise3D wobbleNoise = wobbleSimplex
 				.octaves(1, 0.7f)
-				.flattened(-1, 1)
-				.noise(x, y, z);
+				.flattened(-1, 1);
 
 		return (x, y, z) -> {
 
+			// The tube radius and the vertical variation below asked the warp for the same value; it is a pure
+			// function of the position, so one evaluation covers both uses.
+			final float positionWarp = warp.noise(x, y, z);
+
 			// For hollow tubes, define inner and outer boundaries.
-			final float tubeMidRadius = 8.0f * (0.75f + (0.75f * warp.noise(x,y,z)));
+			final float tubeMidRadius = 8.0f * (0.75f + (0.75f * positionWarp));
 			float innerEdge = tubeMidRadius - wallThickness * 0.5f;
 			float outerEdge = tubeMidRadius + wallThickness * 0.5f;
 
-			// --- 1. Compute Cellular Distance (in XZ) with Wobble ---
 			// Determine which cell (of size tubeCellSize) the point is in.
 			int cellX = (int) Math.floor(x / tubeCellSize);
 			int cellZ = (int) Math.floor(z / tubeCellSize);
@@ -61,7 +64,6 @@ public class GenerationTubedNoise implements IGenerationPattern
 					float baseCenterX = neighborX * tubeCellSize + offsetX;
 					float baseCenterZ = neighborZ * tubeCellSize + offsetZ;
 
-					// --- Apply Wobble ---
 					// Compute an additional offset based on the candidate center and the vertical position.
 					// The noise here is evaluated at a scaled version of the candidate center plus y, ensuring a smooth variation.
 					float wobbleAmount = 3.0f; // Maximum displacement for the wobble effect.
@@ -82,7 +84,6 @@ public class GenerationTubedNoise implements IGenerationPattern
 				}
 			}
 
-			// --- 2. Convert Distance to Hollow Tube Density ---
 			// We want density only in a narrow band:
 			//   * Inside the inner edge, we are hollow (density = 0).
 			//   * Between innerEdge and innerEdge+falloff, density rises from 0 to 1.
@@ -93,18 +94,15 @@ public class GenerationTubedNoise implements IGenerationPattern
 			float densityOuter  = smoothStep(outerEdge - falloff, outerEdge, minDist);
 			float tubeDensity = densityInner - densityOuter;
 
-			// --- 3. Vertical Variation ---
 			// Modulate the density with a sine function so that tubes twist and vary with height.
-			float verticalVariation = (float)(Math.sin(y / 16.0) * 0.2f) + 1f + (0.5f * warp.noise(x,y,z));
+			float verticalVariation = (float)(Math.sin(y / 16.0) * 0.2f) + 1f + (0.5f * positionWarp);
 
-			// --- 4. Apply a Normalized Warp for Extra Organic Variation ---
 			// Normalize the warp noise to [0,1] to avoid negative scaling.
 			float twist = warp.noise(x / 32, y / 8, z / 32) + 1f;
 
 			// Combine the factors.
 			float product = tubeDensity * verticalVariation * twist;
 
-			// --- 5. Final Contrast ---
 			// Scale so that tube regions approach +1 and the background remains at -1.
 			float result = product * 2 - 1;
 			return result;

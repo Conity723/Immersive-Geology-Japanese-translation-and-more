@@ -8,6 +8,8 @@
 
 package com.igteam.immersivegeology.common.data.generators;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import blusunrize.immersiveengineering.api.IETags;
 
 import com.igteam.immersivegeology.common.block.helper.IOreBlock;
@@ -127,7 +129,7 @@ public class IGItemTags extends ItemTagsProvider
 	boolean useOptionalTag = false;
 	private void generateOreBlockTags(MaterialInterface<?> material)
 	{
-		for(StoneEnum stone : StoneEnum.values())
+		for(IStoneType stone : IGStoneTypes.all())
 		{
 			for(OreRichness richness : OreRichness.values())
 			{

@@ -8,6 +8,7 @@
 
 package com.igteam.immersivegeology.core.material.data.enums;
 
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import com.igteam.immersivegeology.common.block.helper.IOreBlock;
 import com.igteam.immersivegeology.common.block.helper.MineralWeathering;
 import com.igteam.immersivegeology.common.block.helper.OreRichness;
@@ -178,7 +179,7 @@ public enum MetalEnum implements MaterialInterface<MaterialMetal>, IWorldGenConf
     }
 
     @Override
-    public IOreBlock getOreBlock(StoneEnum stone, OreRichness richness)
+    public IOreBlock getOreBlock(IStoneType stone, OreRichness richness)
     {
         return material.getOreBlock(stone, richness);
     }

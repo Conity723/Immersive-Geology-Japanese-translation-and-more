@@ -7,6 +7,8 @@
  */
 package com.igteam.immersivegeology.core.registration;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler;
 import blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler.IMultiblock;
 import blusunrize.immersiveengineering.api.multiblocks.TemplateMultiblock;
@@ -190,7 +192,7 @@ public class IGRegistrationHolder {
 
     private static final List<Consumer<IEventBus>> MOD_BUS_CALLBACKS = new ArrayList<>();
 
-    private static boolean checkModMaterialsForOverlap(StoneEnum stoneType, GeologyMaterial ore, IFlagType<?> flag)
+    private static boolean checkModMaterialsForOverlap(IStoneType stoneType, GeologyMaterial ore, IFlagType<?> flag)
     {
         Map<ModFlags, Map<IFlagType<?>, MaterialHelper>> ore_map = ore.getExistingImplementationMap();
         for(ModFlags mod : ModFlags.values()) {
@@ -342,12 +344,15 @@ public class IGRegistrationHolder {
                         }
                         case ORE_BLOCK -> {
                             // for each stone type: stoneMaterial needs to be implemented for each ore block
-                            for (StoneEnum base : StoneEnum.values()) {
-                                // checks is the material has any ModFlags (e.g. Beyond Earth)
+                            for (IStoneType base : IGStoneTypes.all()) {
+                                // checks if the material has any ModFlags (e.g. Beyond Earth)
                                 if(!base.hasFlag(MaterialFlags.IS_ORE_BEARING)) continue;
                                 if(!material.instance().acceptableStoneType(base.instance())) continue;
                                 if(Arrays.stream(ModFlags.values()).anyMatch((m) -> !m.isStrictlyLoaded() && base.hasFlag(m)) &! DatagenModLoader.isRunningDataGen()) continue;
                                 if(checkModMaterialsForOverlap(base, material.instance(), flags)) continue;
+                                // A declared rock type can name minerals it will not host, for when the mod that
+                                // owns the rock already has that ore itself.
+                                if(base.excludesOre(material.instance())) continue;
                                 // After all checks, now we can generate the different ore levels
                                 for(OreRichness richness : OreRichness.values()){
                                     String registryKey = blockCategory.getRegistryKey(material, base, richness);

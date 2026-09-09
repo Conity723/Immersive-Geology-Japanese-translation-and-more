@@ -1,5 +1,7 @@
 package com.igteam.immersivegeology.core.registration;
 
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import blusunrize.immersiveengineering.api.IEApi;
 import blusunrize.immersiveengineering.api.ManualHelper;
 import blusunrize.immersiveengineering.api.excavator.ExcavatorHandler;
@@ -294,7 +296,7 @@ public class IGContent {
 
         if(material.hasFlag(BlockCategoryFlags.ORE_BLOCK))
         {
-            for(StoneEnum stone : StoneEnum.values())
+            for(IStoneType stone : IGStoneTypes.all())
             {
                 if(!material.instance().acceptableStoneType(stone.instance())) continue;
                 if(!stone.isVanilla()) continue;

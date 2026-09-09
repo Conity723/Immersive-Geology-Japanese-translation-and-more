@@ -132,65 +132,20 @@
       "id": "immersivegeology:tfc_rich_ore_block_cuprite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_cuprite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_cuprite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_cuprite_granite",
-      "required": false
-    }
+    "immersivegeology:minecraft_poor_ore_block_cuprite_stone",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_stone",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_stone",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_cuprite_granite",
+    "immersivegeology:minecraft_normal_ore_block_cuprite_granite",
+    "immersivegeology:minecraft_rich_ore_block_cuprite_granite"
   ]
 }

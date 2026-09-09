@@ -8,6 +8,7 @@
 
 package com.igteam.immersivegeology.common.world;
 
+import com.igteam.immersivegeology.core.material.helper.material.IStoneType;
 import com.igteam.immersivegeology.common.block.helper.IOreBlock;
 import com.igteam.immersivegeology.common.block.helper.OreRichness;
 import com.igteam.immersivegeology.common.world.features.helper.noise.IGGenerationType;
@@ -43,7 +44,7 @@ public interface IWorldGenConfig
 
 	GeologyMaterial instance();
 
-	IOreBlock getOreBlock(StoneEnum stone, OreRichness oreRichness);
+	IOreBlock getOreBlock(IStoneType stone, OreRichness oreRichness);
 
 	BlockState getDefaultBlockstate();
 

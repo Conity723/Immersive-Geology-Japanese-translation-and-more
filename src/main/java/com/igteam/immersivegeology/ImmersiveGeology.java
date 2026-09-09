@@ -17,6 +17,8 @@ import com.igteam.immersivegeology.core.ClientProxy;
 import com.igteam.immersivegeology.core.CommonProxy;
 import com.igteam.immersivegeology.core.lib.IGLib;
 import com.igteam.immersivegeology.core.material.GeologyMaterial;
+import com.igteam.immersivegeology.core.material.data.stone.IGStoneTypes;
+import com.igteam.immersivegeology.core.material.data.stone.config.IGStoneTypeConfig;
 import com.igteam.immersivegeology.core.material.helper.flags.BlockCategoryFlags;
 import com.igteam.immersivegeology.core.material.helper.flags.IFlagType;
 import com.igteam.immersivegeology.core.material.helper.flags.ItemCategoryFlags;
@@ -73,6 +75,13 @@ public class ImmersiveGeology {
 
         IGLib.IG_LOGGER.info("- World Event Handler Registration");
         MinecraftForge.EVENT_BUS.register(new IGWorldSubscription());
+
+        IGLib.IG_LOGGER.info("- Declared Stone Type Configuration Registration");
+
+        // Registered so it can be edited in game and so the file is written with its documentation. The rock
+        // types themselves are read straight from this same file during construction, above, because blocks for
+        // them have to exist before the registries freeze.
+        ModLoadingContext.get().registerConfig(Type.COMMON, IGStoneTypeConfig.SPEC, IGStoneTypeConfig.FILE_NAME);
 
         IGLib.IG_LOGGER.info("- Client Configuration Registration");
         ModLoadingContext.get().registerConfig(Type.CLIENT, IGClientConfig.CONFIG_SPEC);
@@ -202,6 +211,10 @@ public class ImmersiveGeology {
 
     public void setup(final FMLCommonSetupEvent event)
     {
+        // Says, per declared rock type, how many minerals will actually generate in it - a rock can be
+        // declared correctly and still host nothing if no mineral accepts its formation in that dimension.
+        IGStoneTypes.logDeclaredStoneSummary();
+
         IGRegistrationHolder.buildMaterialRecipes();
         IGLib.IG_LOGGER.info("- Event Handler Registration");
         MinecraftForge.EVENT_BUS.register(new IGCommonForgeEvents());

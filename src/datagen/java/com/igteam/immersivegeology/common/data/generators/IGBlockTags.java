@@ -54,7 +54,6 @@ public class IGBlockTags extends BlockTagsProvider
 	{
 
 		IGLib.IG_LOGGER.info("Started Registration of Immersive Geology Block Tags");
-		boolean useOptionalTag = false;
 		for(RegistryObject<Block> block : IGRegistrationHolder.getBlockRegistryMap().values())
 		{
 			if(block.get() instanceof IGFluidBlock fluidBlock)
@@ -101,13 +100,16 @@ public class IGBlockTags extends BlockTagsProvider
 			if(block.get() instanceof IOreBlock oreBlock)
 			{
 				Block ore = block.get();
-				if(!oreBlock.getStoneMaterial().hasFlag(ModFlags.MINECRAFT) || !oreBlock.getStoneMaterial().hasFlag(ModFlags.IMMERSIVEENGINEERING)) useOptionalTag = true;
+				// An ore whose host rock belongs to another mod is only present when that mod is, so it goes in
+				// as an optional entry. Ores in Minecraft's own stone always exist and are added outright, which
+				// keeps datagen failing loudly on a mistyped id instead of silently dropping it.
+				boolean useOptionalTag = !(oreBlock.getStoneMaterial().hasFlag(ModFlags.MINECRAFT)
+						|| oreBlock.getStoneMaterial().hasFlag(ModFlags.IMMERSIVEENGINEERING));
 
 				TagKey<Block> ore_material_tag = oreBlock.getOreMaterial().getBlockMaterialTag();
 				TagKey<Block> ore_block = BlockCategoryFlags.ORE_BLOCK.getCategoryTag();
 
 				if(useOptionalTag) {
-					useOptionalTag = false;
 					String name = oreBlock.getIGDescriptionId().toLowerCase(Locale.ROOT);
 					String id = name.substring(name.lastIndexOf('.') +1);
 					tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation(IGLib.MODID, id));
@@ -151,6 +153,7 @@ public class IGBlockTags extends BlockTagsProvider
 				}
 
 				boolean hasExistingImplementation = false;
+				boolean useOptionalTag = false;
 				for(MaterialInterface<?> material : materials)
 				{
 					Set<IFlagType<?>> flag_sets = material.getFlags();
@@ -166,7 +169,6 @@ public class IGBlockTags extends BlockTagsProvider
 
 				if(useOptionalTag)
 				{
-					useOptionalTag = false;
 					String name = genericBlock.getIGBlock().getDescriptionId().toLowerCase(Locale.ROOT);
 					String id = name.substring(name.lastIndexOf('.')+1);
 					tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation(IGLib.MODID, id));
@@ -179,6 +181,7 @@ public class IGBlockTags extends BlockTagsProvider
 			{
 				List<MaterialInterface<?>> materials = List.copyOf(slab.getMaterials());
 				boolean hasExistingImplementation = false;
+				boolean useOptionalTag = false;
 				for(MaterialInterface<?> material : materials)
 				{
 					Set<IFlagType<?>> flag_sets = material.getFlags();
@@ -194,7 +197,6 @@ public class IGBlockTags extends BlockTagsProvider
 
 				if(useOptionalTag)
 				{
-					useOptionalTag = false;
 					String name = slab.getIGBlock().getDescriptionId().toLowerCase(Locale.ROOT);
 					String id = name.substring(name.lastIndexOf('.')+1);
 					tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation(IGLib.MODID, id));

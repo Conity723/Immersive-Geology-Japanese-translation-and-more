@@ -342,7 +342,6 @@
   "machine.immersivegeology.hydrojet": "Hydrojet Cutter",
   "machine.immersivegeology.ballmill": "Ballmill",
 
-  "jei.immersivegeology.geology.grades_hint": "Rich at the core of a vein, poor at its edges.",
   "jei.immersivegeology.geology.grade.poor": "The outer shell of a vein.",
   "jei.immersivegeology.geology.grade.normal": "The bulk of a vein.",
   "jei.immersivegeology.geology.grade.rich": "The dense core of a vein.",

@@ -132,65 +132,20 @@
       "id": "immersivegeology:tfc_rich_ore_block_monazite_shale",
       "required": false
     },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_stone",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_deepslate",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_andesite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_diorite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_poor_ore_block_monazite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_normal_ore_block_monazite_granite",
-      "required": false
-    },
-    {
-      "id": "immersivegeology:minecraft_rich_ore_block_monazite_granite",
-      "required": false
-    }
+    "immersivegeology:minecraft_poor_ore_block_monazite_stone",
+    "immersivegeology:minecraft_normal_ore_block_monazite_stone",
+    "immersivegeology:minecraft_rich_ore_block_monazite_stone",
+    "immersivegeology:minecraft_poor_ore_block_monazite_deepslate",
+    "immersivegeology:minecraft_normal_ore_block_monazite_deepslate",
+    "immersivegeology:minecraft_rich_ore_block_monazite_deepslate",
+    "immersivegeology:minecraft_poor_ore_block_monazite_andesite",
+    "immersivegeology:minecraft_normal_ore_block_monazite_andesite",
+    "immersivegeology:minecraft_rich_ore_block_monazite_andesite",
+    "immersivegeology:minecraft_poor_ore_block_monazite_diorite",
+    "immersivegeology:minecraft_normal_ore_block_monazite_diorite",
+    "immersivegeology:minecraft_rich_ore_block_monazite_diorite",
+    "immersivegeology:minecraft_poor_ore_block_monazite_granite",
+    "immersivegeology:minecraft_normal_ore_block_monazite_granite",
+    "immersivegeology:minecraft_rich_ore_block_monazite_granite"
   ]
 }
